@@ -41,7 +41,7 @@ class conection(object):
         except Exception as e:
             print ("Se produjo un error al realizar el UPDATE la BD:\n" + str(e))
             updated_rows = str(e)
-            raise
+            #raise
         finally:
             return updated_rows
         

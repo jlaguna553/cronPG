@@ -4,9 +4,15 @@ import sys
 import binascii
 import Padding
 
-#plaintext='i9rn{Pntc5W{Jn'
-#key = '05160f048ec6f52e924837c2bf84d665'
-#iv= 'd24ac216d2292c8f'
+#plaintext='ZIIFPHXM4ckqHCVlLFqwJw=='
+
+
+#plaintext = 'e3l0z92_252X9QkT'
+plaintext ='VYYvTw7ywu4WISQ+C17qVVVgJUe98e3Vc4PvP0mYvh4='
+
+#plaintext = 'QPM5TUWAu+5DZUMEdHnZcVVgJUe98e3Vc4PvP0mYvh4='
+key = '05160f048ec6f52e924837c2bf84d665'
+iv= 'd24ac216d2292c8f'
 
 
 
@@ -22,7 +28,7 @@ def decrypt(ciphertext,key,iv):
 
 
 #print encrypt(plaintext,key,iv)
-#print decrypt(plaintext,key,iv)
+print decrypt(plaintext,key,iv)
 
 #ciphertext = encrypt(plaintext,key,AES.MODE_OFB,iv)
 #print "Cipher (OFB): "+binascii.b2a_base64(bytearray(ciphertext))
